@@ -4,10 +4,19 @@ import java.util.Scanner;
 
 public class Student
 {
+
     String firstName;
     String lastName;
     String studentEmail;
     String studentCourse;
+
+    public Student(){
+        this.firstName = "";
+        this.lastName = "";
+        this.studentEmail = "";
+        this.studentCourse = "";
+    }
+
 
     public String getFirstName() {
         return firstName;
@@ -54,9 +63,16 @@ public class Student
         System.out.print("Enter your email: ");
         this.studentEmail = scanner.nextLine();
 
-        System.out.print("Enter your email: ");
+        System.out.print("Enter your course: ");
         this.studentCourse = scanner.nextLine();
-
     }
+
+    public void display()
+    {
+        System.out.println("Name: " + firstName + " " + lastName);
+        System.out.println("Email: " + studentEmail);
+        System.out.println("Course: " + studentCourse);
+    }
+
 
 }

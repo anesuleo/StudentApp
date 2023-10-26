@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cfd009bf-e8a1-4752-84a6-a29d068be6b3" name="Changes" comment="Added Getters and Setters">
+    <list default="true" id="cfd009bf-e8a1-4752-84a6-a29d068be6b3" name="Changes" comment="Added first object for the first Student using Getters">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ie/atu/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ie/atu/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ie/atu/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ie/atu/Student.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +31,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
   <component name="ProjectId" id="2XA0pzu225zyMVnONAubDSExcfu" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -40,7 +45,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/G00425238@atu.ie/OneDrive - Atlantic TU/Year 2/Week5Lab",
+    "git-widget-placeholder": "feature2",
+    "last_opened_file_path": "C:/Users/anesu/OneDrive - Atlantic TU/Year 2/Week5Lab",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -59,7 +65,8 @@
       <updated>1698056766517</updated>
       <workItem from="1698056767542" duration="1569000" />
       <workItem from="1698235592265" duration="2664000" />
-      <workItem from="1698239389477" duration="1301000" />
+      <workItem from="1698239389477" duration="2097000" />
+      <workItem from="1698318649883" duration="6785000" />
     </task>
     <task id="LOCAL-00001" summary="Created New Project called Student App">
       <created>1698236348293</created>
@@ -75,7 +82,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698238216945</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added first object for the first Student using Getters">
+      <created>1698241041082</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1698241041082</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,6 +109,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created New Project called Student App" />
     <MESSAGE value="Added Getters and Setters" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Getters and Setters" />
+    <MESSAGE value="Added first object for the first Student using Getters" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added first object for the first Student using Getters" />
   </component>
 </project>
