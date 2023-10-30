@@ -18,18 +18,21 @@ public class Main
         //Second Student with Default Constructor and Setters
         Scanner scanner = new Scanner(System.in);
 
-        Student student2 = new Student();
+        Student student2 = new Student(" ", " ");
         System.out.println("Enter your first name: ");
-        student2.setFirstName(scanner.nextLine());
+        String firstName = scanner.nextLine();
         System.out.println("Enter your last name: ");
-        student2.setLastName(scanner.nextLine());
+        String lastname = scanner.nextLine();
         System.out.println("Enter your email: ");
         student2.setStudentEmail(scanner.nextLine());
         System.out.println("Enter your course: ");
         student2.setStudentCourse(scanner.nextLine());
 
-        student2.display();
+        System.out.println("Name: " + firstName + " " + lastname);
+        System.out.println("Email: " + student2.getStudentEmail());
+        System.out.println("Course: " + student2.getStudentCourse());
 
+        //Third Student with 
 
 
     }

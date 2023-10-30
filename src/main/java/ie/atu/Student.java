@@ -4,19 +4,24 @@ import java.util.Scanner;
 
 public class Student
 {
-
     String firstName;
     String lastName;
     String studentEmail;
     String studentCourse;
 
-    public Student(){
+    public Student()
+    {
         this.firstName = "";
         this.lastName = "";
         this.studentEmail = "";
         this.studentCourse = "";
     }
 
+    public Student(String firstName, String lastName)
+    {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
 
     public String getFirstName() {
         return firstName;
@@ -73,6 +78,7 @@ public class Student
         System.out.println("Email: " + studentEmail);
         System.out.println("Course: " + studentCourse);
     }
+
 
 
 }
