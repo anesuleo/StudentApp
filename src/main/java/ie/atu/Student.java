@@ -1,43 +1,40 @@
 package ie.atu;
 
-import java.util.Scanner;
 
 public class Student
 {
-    String firstName;
-    String lastName;
+
+    int studentCount = 1;
+    String name;
     String studentEmail;
     String studentCourse;
 
     public Student()
     {
-        this.firstName = "";
-        this.lastName = "";
+        this.name = "";
         this.studentEmail = "";
         this.studentCourse = "";
     }
 
-    public Student(String firstName, String lastName)
+    public Student(String name, String studentEmail, String studentCourse) {
+        this.name = name;
+        this.studentEmail = studentEmail;
+        this.studentCourse = studentCourse;
+    }
+
+    public Student(String name)
     {
-        this.firstName = firstName;
-        this.lastName = lastName;
+        this.name = name;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getName() {
+        return name;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
 
     public String getStudentEmail() {
         return studentEmail;
@@ -55,30 +52,10 @@ public class Student
         this.studentCourse = studentCourse;
     }
 
-    public void getUserInput()
-    {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.print("Enter first name: ");
-        this.firstName = scanner.nextLine();
-
-        System.out.print("Enter last: ");
-        this.lastName = scanner.nextLine();
-
-        System.out.print("Enter your email: ");
-        this.studentEmail = scanner.nextLine();
-
-        System.out.print("Enter your course: ");
-        this.studentCourse = scanner.nextLine();
-    }
-
     public void display()
     {
-        System.out.println("Name: " + firstName + " " + lastName);
-        System.out.println("Email: " + studentEmail);
-        System.out.println("Course: " + studentCourse);
+        System.out.println("Name: " + getName());
+        System.out.println("Email: " + getStudentEmail());
+        System.out.println("Course: " + getStudentCourse() + "\n");
     }
-
-
-
 }

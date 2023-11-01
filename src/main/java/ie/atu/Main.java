@@ -6,34 +6,50 @@ public class Main
 {
     public static void main(String[] args)
     {
-        //First Student with Getters
+        //First Student
+        Scanner scanner = new Scanner(System.in);
         Student student1 = new Student();
 
-        student1.getUserInput();
+        System.out.println("Student 1, Please enter your details: ");
+        System.out.print("Enter your name: ");
+        student1.setName(scanner.nextLine());
+        System.out.print("Enter your email: ");
+        student1.setStudentEmail(scanner.nextLine());
+        System.out.print("Enter your course: ");
+        student1.setStudentCourse(scanner.nextLine());
+        System.out.println("\n");
 
-        System.out.println("Name: " + student1.getFirstName() + " " + student1.getLastName());
-        System.out.println("Email: " + student1.getStudentEmail());
-        System.out.println("Course: " + student1.getStudentCourse());
+        //Second Student
 
-        //Second Student with Default Constructor and Setters
-        Scanner scanner = new Scanner(System.in);
+        System.out.println("Student 2, Please enter your details: ");
+        System.out.println("Enter your name: ");
+        String name2 = scanner.nextLine();
 
-        Student student2 = new Student(" ", " ");
-        System.out.println("Enter your first name: ");
-        String firstName = scanner.nextLine();
-        System.out.println("Enter your last name: ");
-        String lastname = scanner.nextLine();
+        Student student2 = new Student(name2);
+
         System.out.println("Enter your email: ");
         student2.setStudentEmail(scanner.nextLine());
         System.out.println("Enter your course: ");
         student2.setStudentCourse(scanner.nextLine());
+        System.out.println("\n");
 
-        System.out.println("Name: " + firstName + " " + lastname);
-        System.out.println("Email: " + student2.getStudentEmail());
-        System.out.println("Course: " + student2.getStudentCourse());
+        //Third Student
+        System.out.println("Student 3, Please enter your details: ");
+        System.out.print("Enter your name: ");
+        String name3 = scanner.nextLine();
+        System.out.println("Enter your email: ");
+        String email3 = scanner.nextLine();
+        System.out.println("Enter your course: ");
+        String course3 = scanner.nextLine();
+        System.out.println("\n");
+        Student student3 = new Student(name3, email3, course3);
 
-        //Third Student with 
-
-
+        //Information display for all 3 students
+        System.out.println("Student 1 your details are...");
+        student1.display();
+        System.out.println("Student 2 your details are...");
+        student2.display();
+        System.out.println("Student 3 your details are...");
+        student3.display();
     }
 }
